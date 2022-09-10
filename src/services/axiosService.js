@@ -3,7 +3,7 @@ import axios from "axios";
 const BASE_URL = "http://localhost:5000/";
 
 /* function createHeader() {
-  const auth = JSON.parse(localStorage.getItem("trackItUser"));
+  const auth = JSON.parse(localStorage.getItem("myWalletUser"));
   const config = {
     headers: { Authorization: `Bearer ${auth.token}` }
   };
