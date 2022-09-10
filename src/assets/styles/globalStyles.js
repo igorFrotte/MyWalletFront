@@ -2,6 +2,8 @@ import { createGlobalStyle } from 'styled-components';
  
 const GlobalStyle = createGlobalStyle`
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
   html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -55,16 +57,19 @@ a {
 	text-decoration: none; 
 }
 
-  * {
+* {
     box-sizing: border-box;
-  }
-  body {
-    // fazer
-  }
-  .root {
+}
+body {
+    font-family: 'Raleway', sans-serif;
+	display: flex;
+	justify-content: center;
+	background-color: #8C11BE;
+}
+.root {
 	height: 100%;
     width: 100%;
-  }
+}
   
 `;
  
