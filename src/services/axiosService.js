@@ -2,13 +2,13 @@ import axios from "axios";
 
 const BASE_URL = "http://localhost:5000/";
 
-/* function createHeader() {
+function createHeader() {
   const auth = JSON.parse(localStorage.getItem("myWalletUser"));
   const config = {
     headers: { Authorization: `Bearer ${auth.token}` }
   };
   return config;
-} */
+} 
 
 function singUp(body) {
   const promise = axios.post(BASE_URL + "sign-up", body);
@@ -20,16 +20,16 @@ function login(body) {
   return promise;
 }
 
-/* function createHabit(body) {
+function listTransactions() {
   const header = createHeader();
-  const promise = axios.post(BASE_URL + "habits", body, header);
+  const promise = axios.get(BASE_URL + "transactions", header);
   return promise;
 } 
 
-function listHabits() {
+function createTransaction(body) {
   const header = createHeader();
-  const promise = axios.get(BASE_URL + "habits", header);
+  const promise = axios.post(BASE_URL + "transactions", body, header);
   return promise;
-} */
+} 
 
-export { singUp, login };
+export { singUp, login, listTransactions, createTransaction };

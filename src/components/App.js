@@ -22,10 +22,17 @@ export default function App() {
               </PrivatePage>
             }
           /> 
-          <Route path="/move"   /* Mudar Nome */
+          <Route path="/entrada" 
             element={
               <PrivatePage>
-                <Move />
+                <Move type="positive" />
+              </PrivatePage>
+            }
+          />
+          <Route path="/saida"   
+            element={
+              <PrivatePage>
+                <Move type="negative" />
               </PrivatePage>
             }
           />

@@ -65,7 +65,7 @@ export default function SignUp() {
             />
             <TemplateButton disabled={disabled} height="45" width="300" type="submit" >
               {disabled? <ThreeDots color="#ffffff" height={40} width={50}/> : "Cadastrar"}
-              </TemplateButton>
+            </TemplateButton>
           </form>
           <Link to="/" ><p>Já tem uma conta? Entre agora!</p></Link>
         </Auth>

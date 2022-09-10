@@ -77,5 +77,61 @@ const TemplateInput = styled.input`
     }
 `;
 
+const BackGround = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 25px;
 
-export { Auth, TemplateButton, TemplateInput};
+    & > div:first-child {
+        width: 330px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    h3 {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        color: #FFFFFF;
+    }
+    ion-icon {
+        width: 30px;
+        height: 30px;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    input {
+        margin-bottom: 12px;
+        width: 330px;
+    }
+    svg {
+        margin-bottom: 40px;
+    }
+    ${props => {
+        if(props.disabled === true){
+            return `
+                input {
+                    background: #F2F2F2;
+                    color: #AFAFAF;
+                }
+                button {
+                    opacity: 0.7;
+                    cursor: initial;
+                }
+            `; 
+        }
+    }}
+`;
+
+export { BackGround, Auth, TemplateButton, TemplateInput};
