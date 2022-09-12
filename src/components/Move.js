@@ -1,5 +1,4 @@
 import { BackGround, TemplateButton, TemplateInput } from "../assets/styles/styledComponents";
-import styled from "styled-components";
 import { useState } from "react";
 import { ThreeDots } from "react-loader-spinner";
 import { createTransaction } from "../services/axiosService";

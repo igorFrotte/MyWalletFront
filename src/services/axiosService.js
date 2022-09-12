@@ -32,4 +32,10 @@ function createTransaction(body) {
   return promise;
 } 
 
-export { singUp, login, listTransactions, createTransaction };
+function validToken() {
+  const header = createHeader();
+  const promise = axios.get(BASE_URL + "token", header);
+  return promise;
+}
+
+export { singUp, login, listTransactions, createTransaction, validToken };
